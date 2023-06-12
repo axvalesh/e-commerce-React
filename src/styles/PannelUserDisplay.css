@@ -1,0 +1,22 @@
+.PannelUserDisplay {
+    flex: 1 0 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+.PannelUserDisplay .PannelUserDisplay__info div {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.PannelUserDisplay__roles-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.PannelUserDisplay button {
+    padding: 10px 0px;
+    flex: 0 0 30%;
+}

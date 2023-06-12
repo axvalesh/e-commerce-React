@@ -1,0 +1,41 @@
+.PannelProductItem__content {
+    flex: 0 0 40%;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.PannelProductItem__content div {
+    flex: 0 0 30%;
+}
+.PannelProductItem__content div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.PannelProductItem__info {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    
+    
+}
+.PannelProductItem__info h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.PannelProductItem__info p {
+    font-weight: 500;
+}
+
+.PannelProductItem__info button {
+    padding: 20px 0px;
+}
+
+.PannelProductItem__info button:hover {
+    transform: none;
+}

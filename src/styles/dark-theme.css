@@ -1,0 +1,12 @@
+:root {
+    --green: #79C557;
+    --violet: #632379;
+    --white: #ffffff;
+    --dark: #282828;
+    --box-shadow: box-shadow: 0px 0px 20px -3px rgba(66, 68, 90, 1);
+    --centered-flex: display: flex; align-items: center; justify-content: center;
+    --ThemeTextColor: var(--white);
+    --ThemeBackground: var(--dark);
+    --ThemeTextAdditionalColor: var(--green);
+    --iconTextHover: invert(66%) sepia(60%) saturate(377%) hue-rotate(57deg) brightness(94%) contrast(91%);
+  }

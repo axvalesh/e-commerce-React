@@ -1,0 +1,7 @@
+.select {
+    padding: 5px;
+    background-color: var(--ThemeBackground);
+    color: var(--ThemeAdditionTextColor);
+    letter-spacing: 1px;
+    font-weight: 600;
+}

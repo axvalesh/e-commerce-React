@@ -1,0 +1,17 @@
+@import '/src/styles/variables.css';
+
+.myButton {
+    padding: 5px 10px;
+    background-color: var(--ThemeTextAdditionalColor);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.myButton:hover {
+    transform: scale(1.2);
+    border-top-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    opacity: 0.9;
+}

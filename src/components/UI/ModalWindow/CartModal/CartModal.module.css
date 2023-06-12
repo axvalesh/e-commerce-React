@@ -1,0 +1,25 @@
+
+.modal_background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.cartModalContent {
+    padding: 100px 0px;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.modal_background.activeEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+.modal_background.activeCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

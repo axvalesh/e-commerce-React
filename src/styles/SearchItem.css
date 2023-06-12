@@ -1,0 +1,24 @@
+.searchItem__content {
+    background-color: var(--ThemeBackground);
+    margin-top: 20px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    border-bottom: 3px solid var(--ThemeTextAdditionalColor);
+}
+.searchItem__content img {
+    flex: 0 0 30%;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.searchItem__content-info h2 {
+    font-size: 1.5rem;
+}
+
+.searchItem__content-info h3 {
+    font-size: 1rem;
+}
