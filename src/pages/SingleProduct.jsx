@@ -21,6 +21,7 @@ const SingleProduct = () => {
 
     const priceSymbol = setCurrencyText()
     const saledPrice = getSaledPrice(product.sale,product.price)
+    console.log(saledPrice);
     return (
         <div className="singleProduct__content">
             <div className="singleProduct__container">
@@ -50,7 +51,7 @@ const SingleProduct = () => {
                             <span onClick={() => setAmount(amount + 1)} className="icon-plus"></span>
                         </span>
                         <MyButton onClick={(event) => isAuth 
-                            ? addItemToCart({...product, amount: amount, price: saledPrice !== 0 ? saledPrice : product.price}) 
+                            ? addItemToCart({...product, amount: amount, price: saledPrice}) 
                             : event.target.classList.add('notIsAuth')} >Add to cart</MyButton>
                     </div>
                 </div>

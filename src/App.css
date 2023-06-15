@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&family=Ubuntu:wght@400;500&display=swap');
+
 /* 
 font-family: 'Josefin Sans', sans-serif; //header and main
 font-family: 'Ubuntu', sans-serif;  //product section 
@@ -10,39 +11,65 @@ font-family: 'Ubuntu', sans-serif;  //product section
   --dark: #282828;
   --black: #1d1d1d;
 }
+
 body {
   font-family: 'Ubuntu', sans-serif;
   color: var(--ThemeTextColor);
 }
+
 .App-light-theme {
-    --ThemeTextColor: var(--dark);
-    --ThemeBackground: var(--white);
-    --ThemeTextAdditionalColor: var(--violet);
-    --iconTextHover: invert(17%) sepia(42%) saturate(2592%) hue-rotate(261deg) brightness(99%) contrast(99%);
-    --iconMainColor: invert(14%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(106%) contrast(98%);
+  --ThemeTextColor: var(--dark);
+  --ThemeBackground: var(--white);
+  --ThemeTextAdditionalColor: var(--violet);
+  --iconTextHover: invert(17%) sepia(42%) saturate(2592%) hue-rotate(261deg) brightness(99%) contrast(99%);
+  --iconMainColor: invert(14%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(106%) contrast(98%);
 }
+
 .App-dark-theme {
-    --ThemeTextColor: var(--white);
-    --ThemeBackground: var(--dark);
-    --ThemeTextAdditionalColor: var(--green);
-    --iconTextHover: invert(66%) sepia(60%) saturate(377%) hue-rotate(57deg) brightness(94%) contrast(91%);
-    --iconMainColor: invert(100%) sepia(0%) saturate(7470%) hue-rotate(94deg) brightness(96%) contrast(98%);
-    background-color: var(--ThemeBackground);
-    color: var(--ThemeTextColor);
+  --ThemeTextColor: var(--white);
+  --ThemeBackground: var(--dark);
+  --ThemeTextAdditionalColor: var(--green);
+  --iconTextHover: invert(66%) sepia(60%) saturate(377%) hue-rotate(57deg) brightness(94%) contrast(91%);
+  --iconMainColor: invert(100%) sepia(0%) saturate(7470%) hue-rotate(94deg) brightness(96%) contrast(98%);
+  background-color: var(--ThemeBackground);
+  color: var(--ThemeTextColor);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c7c7c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 [class*="__container"] {
   max-width: 1400px;
   margin: auto;
 }
+
+
+
+
+/*==================================================TextChangeForError/succes==================================================*/
 .saledPrice {
   text-decoration: line-through;
   opacity: 0.8;
 }
-.errorText { 
+
+.errorText {
   color: red;
   white-space: nowrap;
   background-color: white;
-  
+
 }
 
 .notIsAuth::before {
@@ -54,6 +81,7 @@ body {
   white-space: nowrap;
   transform: translateX(-50%);
 }
+
 .inputIsEmpty::before {
   content: '* you have to fill all fields';
   color: red;
@@ -63,6 +91,7 @@ body {
   white-space: nowrap;
   transform: translateX(-50%);
 }
+
 .notSuchUser::before {
   content: '* sorry,but there is not such user';
   color: red;
@@ -86,7 +115,7 @@ body {
   white-space: nowrap;
   transform: translateX(-50%);
 }
-
+/*====================================================================================================*/
 .footer__info {
   margin-top: 100px;
   min-height: 200px;
@@ -106,25 +135,31 @@ body {
   transition: all 0.3s ease;
   filter: var(--iconMainColor);
 }
+
 [class*="icon"]:hover {
   filter: var(--iconTextHover);
   transform: scale(1.2);
 }
+
 .icon-cart {
   background: url('./assets/icons/shopping-cart.svg');
 }
+
 .icon-user {
   background: url('./assets/icons/user.svg');
 }
+
 .icon-search {
   background: url('./assets/icons/search.svg');
 }
+
 .icon-chevrons-right {
   background: url('./assets/icons/chevrons-right.svg');
   width: 40px;
   height: 40px;
 }
-.icon-chevrons-left{
+
+.icon-chevrons-left {
   background: url('./assets/icons/chevrons-left.svg');
   width: 40px;
   height: 40px;
@@ -141,6 +176,3 @@ body {
 .icon-menu {
   background: url('./assets/icons/menu.svg');
 }
-
-
-

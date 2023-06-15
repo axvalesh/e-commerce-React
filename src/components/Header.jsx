@@ -153,6 +153,7 @@ const Header = () => {
                                 <>
                                     {items.length > 0 ?
                                         <>
+                                        <h2 style={{ textAlign: 'center', marginTop: '50px' }}>Cart Conent:</h2>
                                             {items.map((item, index) =>
                                                 <CartItem priceSymbol={priceSymbol} setItems={setItems} item={item} amount={item.amount} key={index} title={item.title} price={item.price} description={item.description} image={item.image} />
                                             )}

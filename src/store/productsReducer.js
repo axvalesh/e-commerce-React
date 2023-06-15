@@ -87,17 +87,76 @@ const initProducts = {
         },
         {
             id: 7,
-            title: 'T-shirt fine',
-            price: 700,
+            title: 'boots nice',
+            price: 500,
             description: 'a shoe with a rubber sole that is designed for people to wear while running, playing sports, etc.',
-            sale: 70,
-            image: tshirtW,
+            sale: 20,
+            image: sneakersM,
+            filter: {
+                category: 'boots',
+                gender: 'men',
+            }
+        },
+        {
+            id: 8,
+            title: 'jackets fine',
+            price: 650,
+            description: 'an outer garment extending either to the waist or the hips, typically having sleeves and a fastening down the front',
+            sale: 0,
+            image: jacketM,
+            filter: {
+                category: 'jackets',
+                gender: 'men',
+            }
+        },
+        {
+            id: 9,
+            title: 'T-shirt nice',
+            price: 100,
+            description: 'a shoe with a rubber sole that is designed for people to wear while running, playing sports, etc.',
+            sale: 0,
+            image: tshirtM,
+            filter: {
+                category: 'T-shirt',
+                gender: 'men',
+            }
+        },
+        {
+            id: 10,
+            title: 'boots fine',
+            price: 900,
+            description: 'a shoe with a rubber sole that is designed for people to wear while running, playing sports, etc.',
+            sale: 0,
+            image: sneakersW,
+            filter: {
+                category: 'boots',
+                gender: 'women',
+            }
+        },
+        {
+            id: 11,
+            title: 'jackets nice',
+            price: 600,
+            description: 'an outer garment extending either to the waist or the hips, typically having sleeves and a fastening down the front',
+            sale: 10,
+            image: jacketW,
             filter: {
                 category: 'jackets',
                 gender: 'women',
             }
         },
-      
+        {
+            id: 12,
+            title: 'T-shirt fine',
+            price: 200,
+            description: 'a shoe with a rubber sole that is designed for people to wear while running, playing sports, etc.',
+            sale: 30,
+            image: tshirtW,
+            filter: {
+                category: 'T-shirt',
+                gender: 'women',
+            }
+        },
         
         
         

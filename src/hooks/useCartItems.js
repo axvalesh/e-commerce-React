@@ -18,9 +18,7 @@ export function addItemToCart(item) {
                 if(element.id === item.id) {
                     if(item.amount <= 1) {
                         element.amount += 1
-                        console.log('+1');
                     } else {
-                    console.log('+aaa');
                     element.amount += item.amount
                     }
                 }

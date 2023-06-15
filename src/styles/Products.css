@@ -12,9 +12,6 @@
     color: var(--ThemeTextColor);
     font-weight: 600;
 }
-.products__section__categorys {
-    padding-top: 200px;
-}
 .products__section_content {
     width: 100%;
 }
