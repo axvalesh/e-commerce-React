@@ -10,7 +10,7 @@ const CartItem = ({amount, image, title, description, price, item,setItems,price
     
     console.log(item);
     const addToCart = () => {
-        addItemToCart(item)
+        addItemToCart({...item,amount: 1})
         setItems(getCartItems());
     }
     const removeFromCartItem = () => {

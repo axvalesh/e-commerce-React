@@ -16,10 +16,13 @@ export function addItemToCart(item) {
         if(isItemExist) {
             const updatedCart = savedCart.map(element => {
                 if(element.id === item.id) {
-                    if(!item.amount) {
+                    if(item.amount <= 1) {
                         element.amount += 1
-                    }
+                        console.log('+1');
+                    } else {
+                    console.log('+aaa');
                     element.amount += item.amount
+                    }
                 }
                 return element
             })
@@ -29,6 +32,8 @@ export function addItemToCart(item) {
             savedCart.push(item)
             localStorage.setItem('cart', JSON.stringify(savedCart))
         }
+
+
     } else {
         if(!item.amount) {
             item.amount = 1
