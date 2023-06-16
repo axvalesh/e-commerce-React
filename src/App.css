@@ -5,8 +5,8 @@ font-family: 'Josefin Sans', sans-serif; //header and main
 font-family: 'Ubuntu', sans-serif;  //product section 
 */
 :root {
-  --green: #79C557;
-  --violet: #632379;
+  --orange: #f37d1c;
+  --violet: #a553b7;
   --white: #ffffff;
   --dark: #282828;
   --black: #1d1d1d;
@@ -28,7 +28,7 @@ body {
 .App-dark-theme {
   --ThemeTextColor: var(--white);
   --ThemeBackground: var(--dark);
-  --ThemeTextAdditionalColor: var(--green);
+  --ThemeTextAdditionalColor: var(--orange);
   --iconTextHover: invert(66%) sepia(60%) saturate(377%) hue-rotate(57deg) brightness(94%) contrast(91%);
   --iconMainColor: invert(100%) sepia(0%) saturate(7470%) hue-rotate(94deg) brightness(96%) contrast(98%);
   background-color: var(--ThemeBackground);
@@ -115,16 +115,7 @@ body {
   white-space: nowrap;
   transform: translateX(-50%);
 }
-/*====================================================================================================*/
-.footer__info {
-  margin-top: 100px;
-  min-height: 200px;
-  padding: 20px;
-  font-size: 2rem;
-  text-align: center;
-  background-color: var(--ThemeTextAdditionalColor);
-  color: white;
-}
+
 
 /*==================================================ICONS==================================================*/
 [class*="icon"] {
@@ -175,4 +166,8 @@ body {
 
 .icon-menu {
   background: url('./assets/icons/menu.svg');
+}
+
+.icon-github {
+  background: url('./assets/icons/github.svg');
 }

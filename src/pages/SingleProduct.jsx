@@ -21,7 +21,7 @@ const SingleProduct = () => {
 
     const priceSymbol = setCurrencyText()
     const saledPrice = getSaledPrice(product.sale,product.price)
-    console.log(saledPrice);
+    
     return (
         <div className="singleProduct__content">
             <div className="singleProduct__container">

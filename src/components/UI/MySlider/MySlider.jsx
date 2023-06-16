@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 const MySlider = ({images, buttons=false, text}) => {
     const [current,setCurrent] = useState(0)
     const length = images.length
-    console.log(length);
-    console.log(current);
 
     useEffect(() => {
         const intervalId = setInterval(() => {

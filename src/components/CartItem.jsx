@@ -8,7 +8,7 @@ import { setCurrencyText } from "../scripts/setCurrencyText";
 const CartItem = ({amount, image, title, description, price, item,setItems,priceSymbol }) => {
 
     
-    console.log(item);
+    
     const addToCart = () => {
         addItemToCart({...item,amount: 1})
         setItems(getCartItems());

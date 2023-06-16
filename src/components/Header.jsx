@@ -63,7 +63,6 @@ const Header = () => {
 
     useEffect(() => {
         if (search) {
-            console.log(validSearch(search));
             const timeOut = setTimeout(() => setSearchOutput(validSearch(search)), 500)
             return () => clearTimeout(timeOut)
         }
@@ -123,8 +122,8 @@ const Header = () => {
                     <Link to='/' className="header__content__logo">MyShop</Link>
 
                     <nav ref={links} className="header__content__navbar">
-                        <Link to='/'>Home</Link>
-                        <Link to='/products'>Products</Link>
+                        <Link onClick={() => links.current.classList.contains('active') && links.current.classList.remove('active')} to='/'>Home</Link>
+                        <Link onClick={() => links.current.classList.contains('active') && links.current.classList.remove('active')} to='/products'>Products</Link>
                     </nav>
 
                     <div className='header__content__activities'>
@@ -138,6 +137,7 @@ const Header = () => {
                             </div>
                             {searchOutput.map(item =>
                                 <SearchItem
+                                    key={item.id}
                                     sale={item.sale}
                                     setModal={setSearchModal}
                                     title={item.title}
@@ -184,7 +184,7 @@ const Header = () => {
                         )}
 
                         {user[0] !== undefined && user[0].role.includes(ADMIN) && (
-                            <Link to={'/adminPannel'}>ADMIN PANNEL</Link>
+                            <Link className="adminPannelLink" to={'/adminPannel'}>ADMIN PANNEL</Link>
                         )}
                         <span onClick={() => links.current.classList.toggle('active')} className="icon-menu"></span>
                     </div>
