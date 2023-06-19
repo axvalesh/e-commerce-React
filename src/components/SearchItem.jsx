@@ -12,7 +12,7 @@ const SearchItem = ({title,price,image,id,setModal,sale}) => {
     }
     const priceSymbol = setCurrencyText()
     return (
-      <Link onClick={modalOff} to={`/products/${id}`} className="searchItem__content">
+      <Link onClick={modalOff} to={`/products/${id}`} className="searchItem__content animationAppearanceFromThisPlace">
         <img src={image} alt="" />
         <div className="searchItem__content-info">
            <h2>{title}</h2>

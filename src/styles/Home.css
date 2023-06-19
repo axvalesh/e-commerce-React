@@ -6,6 +6,7 @@
     gap: 20%;
     flex-wrap: wrap;
     row-gap: 100px;
+    overflow-x: hidden;
 }
 
 

@@ -3,9 +3,13 @@ import MySelect from "../components/UI/MySelect/MySelect";
 import { useSelector } from "react-redux";
 import ProductItem from "../components/ProductItem";
 import '../styles/Products.css'
+import { useElementOnScreen } from "../hooks/useElementOnScreen";
 
 
 const Products = () => {
+
+    const [ productsRef, isProductsVisible ] = useElementOnScreen()
+
     const productsData = useSelector(state => state.products)
     const products = productsData.products
 
@@ -83,7 +87,7 @@ const Products = () => {
     let dislpayProducts = productToShow()
     return (
         <section className="products__container">
-            <div className="products__section__categorys">
+            <div className={`products__section__categorys animationAppearanceFromLeft`}>
                 <h2>Product category</h2>
                 <div className="categorys">
                     <div onClick={() => setGender('men')} className={`category ${gender === 'men' && 'active'}`}>Men</div>
@@ -91,7 +95,7 @@ const Products = () => {
                 </div>
             </div>
             <div className="products__section_content">
-                <div className="products__content__settings">
+                <div className={`products__content__settings animationAppearanceFromRight`}>
                     <div>
                         <MySelect
                             options={useMemo(() => productsData.categorys.map(item => ({ name: item, value: item })), [products])}
@@ -121,12 +125,12 @@ const Products = () => {
                         <div onClick={() => setCurrentPage(currentPage + 1)} className="icon-chevrons-right"></div>
                     </div>
                 </div>
-                <div className="products__content__all">
+                <div ref={productsRef} className={`products__content__all ${isProductsVisible && 'animationAppearanceFromRight'}`}>
                     {
                         dislpayProducts.length !== 0
                             ?
                             dislpayProducts.map((item, index) =>
-                                <ProductItem sale={item.sale} id={item.id} name={item.title} image={item.image} price={item.price} key={index} index={index + 1} />
+                                <ProductItem sale={item.sale} id={item.id} name={item.title} image={item.image} price={item.price} key={item.id} index={index + 1} />
                             )
                             :
                             <h2>Sorry,there in not products</h2>

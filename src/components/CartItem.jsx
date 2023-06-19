@@ -18,7 +18,7 @@ const CartItem = ({amount, image, title, description, price, item,setItems,price
         setItems(getCartItems());
     }
     return (
-        <div className="cartItem__content">
+        <div className="cartItem__content animationAppearanceFromThisPlace">
             <div className="image__wrapper">
                 <img src={image} alt="" />
             </div>

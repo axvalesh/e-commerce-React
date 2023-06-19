@@ -18,6 +18,7 @@
 }
 
 .products__section_content {
+    overflow-y: hidden;
     width: 100%;
 }
 .products__content__settings {

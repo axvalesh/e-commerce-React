@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import classes from './MySlider.module.css'
 import MyButton from "../MyButton/MyButton";
 import { Link } from "react-router-dom";
-const MySlider = ({images, buttons=false, text}) => {
+const MySlider = forwardRef(({className,images, buttons=false, text}, ref) => {
     const [current,setCurrent] = useState(0)
     const length = images.length
 
@@ -21,7 +21,7 @@ const MySlider = ({images, buttons=false, text}) => {
     },[length,current])
 
     return (
-      <section className={classes.slider}>
+      <section ref={ref} className={`${classes.slider} ${className}`}>
         {buttons && (
             <>
             <span onClick={() => setCurrent(current !== 0 ? current - 1 : length - 1)} className={classes.spanLeft}>
@@ -52,6 +52,6 @@ const MySlider = ({images, buttons=false, text}) => {
 
       </section>
     );
-};
+});
 
 export default MySlider;

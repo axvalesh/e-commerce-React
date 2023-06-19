@@ -6,11 +6,17 @@
     border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .myButton:hover {
     transform: scale(1.2);
     border-top-left-radius: 60%;
     border-bottom-right-radius: 60%;
     opacity: 0.7;
+}
+.myButton:active {
+    opacity: 1;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 0.2s;
 }

@@ -26,16 +26,16 @@ const SingleProduct = () => {
         <div className="singleProduct__content">
             <div className="singleProduct__container">
 
-                <div className="singleProduct__content_side-images">
+                <div className="singleProduct__content_side-images animationAppearanceFromLeft">
                     <div className="side-image-test"></div>
                     <div className="side-image-test"></div>
                     <div className="side-image-test"></div>
                     <div className="side-image-test"></div>
                 </div>
-                <div className="singleProduct__content_main-image">
+                <div className="singleProduct__content_main-image animationAppearanceFromThisPlace">
                     <img src={product.image} alt="" />
                 </div>
-                <div className="singleProduct__content_info">
+                <div className="singleProduct__content_info animationAppearanceFromRight">
                     <h2>{product.title}</h2>
                     <h3>{product.description}</h3>
                     {product.sale !== 0 ?(
@@ -43,7 +43,7 @@ const SingleProduct = () => {
                     ) :(
                         <p>{product.price} {priceSymbol}</p>
                     )}
-                    <div className="info__cart_activities">
+                    <div className="info__cart_activities ">
                         <span>Quantity:</span>
                         <span className="plus-minus-border">
                             <span onClick={() => setAmount(amount - 1)} className="icon-minus"></span>

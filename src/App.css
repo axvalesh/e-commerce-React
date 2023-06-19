@@ -115,7 +115,43 @@ body {
   white-space: nowrap;
   transform: translateX(-50%);
 }
+/*==================================================Animations==================================================*/
 
+@keyframes appearanceFromThisPlace {
+  from { opacity: 0; }
+  to { opacity:  1 ;}
+}
+@keyframes appearanceFromLeft {
+  from { 
+    opacity: 0; 
+    transform: translateX(-100%);
+  }
+  to { 
+    opacity:  1 ;
+    transform: translateX(0);
+  }
+}
+@keyframes appearanceFromRight {
+  from { 
+    opacity: 0; 
+    transform: translateX(100%);
+  }
+  to { 
+    opacity:  1 ;
+    transform: translateX(0);
+  }
+}
+
+.animationAppearanceFromThisPlace {
+  animation: appearanceFromThisPlace 1.5s;
+}
+
+.animationAppearanceFromLeft {
+  animation: appearanceFromLeft 1.5s;
+}
+.animationAppearanceFromRight {
+  animation: appearanceFromRight 1.5s;
+}
 
 /*==================================================ICONS==================================================*/
 [class*="icon"] {
