@@ -1,6 +1,8 @@
-# e-commerce-React
+# E-commerce-React
 
-## e-commerce web site using React,Redux (only frontend)
+Here is web site https://axvalesh.github.io/products
+
+## E-commerce web site using React,Redux (only frontend)
 
 This is an e-commerce project built using React. I made only frontend and simulate backend using Redux.
 
