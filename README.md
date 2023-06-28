@@ -1,6 +1,6 @@
 # E-commerce-React
 
-Here is web site https://axvalesh.github.io/products
+Here is web site [https://axvalesh.github.io/products](https://axvalesh.github.io/e-commerce-React/)
 
 ## E-commerce web site using React,Redux (only frontend)
 
